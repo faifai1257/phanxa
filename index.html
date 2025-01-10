@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reaction Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="name-entry" style="display: none;">
+    <h1>Reaction Game</h1>
+    <label for="player-name">Nhập tên của bạn:</label>
+    <input type="text" id="player-name" placeholder="Tên của bạn...">
+    <button id="start-game-button">Lưu Tên</button>
+  </div>
+
+  <div id="game-container" style="display: none;">
+    <h2>Chào, <span id="player-display-name"></span>!</h2>
+    <div id="traffic-light">
+      <div id="red-light" class="light red"></div>
+      <div id="yellow-light" class="light yellow"></div>
+      <div id="green-light" class="light green"></div>
+    </div>
+    <div id="status">Chờ tín hiệu...</div>
+    <div id="reaction-time">Thời gian phản xạ: <span id="time">--</span> ms</div>
+    <div id="high-score">Kỷ lục của bạn: <span id="high-time">--</span> ms</div>
+    <button id="toggle-sound" class="sound-button">Tắt âm thanh</button>
+  </div>
+
+  <!-- Âm thanh -->
+  <audio id="red-sound" src="sounds/red.mp3"></audio>
+  <audio id="yellow-sound" src="sounds/yellow.mp3"></audio>
+  <audio id="green-sound" src="sounds/green.mp3"></audio>
+  <audio id="success-sound" src="sounds/success.mp3"></audio>
+  <audio id="fail-sound" src="sounds/fail.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

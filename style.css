@@ -1,0 +1,93 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1, h2 {
+  margin: 0;
+  color: white;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: #cccccc;
+  box-shadow: 0 0 10px #ffffff;
+}
+
+#traffic-light {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 100px;
+  height: 300px;
+  background-color: #222;
+  border-radius: 15px;
+  box-shadow: 0 0 20px black;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  margin: 15px 0;
+  border-radius: 50%;
+  background-color: grey;
+  box-shadow: 0 0 10px black;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.red.active {
+  background-color: red;
+  box-shadow: 0 0 30px red;
+}
+
+.yellow.active {
+  background-color: yellow;
+  box-shadow: 0 0 30px yellow;
+}
+
+.green.active {
+  background-color: green;
+  box-shadow: 0 0 30px green;
+}
+
+#status {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: white;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+#reaction-time span, #high-score span {
+  color: #ff4136;
+  text-shadow: 0 0 10px #ff4136, 0 0 20px #ff4136;
+  font-weight: bold;
+}
